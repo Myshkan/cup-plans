@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+div,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal;
+  font-family: "Calibri";
+}
+main {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fdde7e;
+  height: 100vh;
+}
+main .cup-container {
+  padding-top: 80px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 500px;
+  align-items: center;
+}
+main .cup-container .cup-item {
+  height: 440px;
+  background-color: #fff;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+main .cup-container .cup-item:hover {
+  height: 500px;
+}
+main .cup-container .cup-item .cup-item-content {
+  margin-top: 20px;
+  flex-direction: column;
+  display: flex;
+}
+main .cup-container .cup-item .cup-item-content .cup-price {
+  color: #02995b;
+  text-align: center;
+  font-size: 70px;
+  flex: 0.7;
+}
+main .cup-container .cup-item .cup-item-content .cup-img {
+  width: 135px;
+  height: 135px;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  flex: 1.1;
+}
+main .cup-container .cup-item .cup-item-content .cup-img .smoke {
+  left: 40px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+main .cup-container .cup-item .cup-item-content .cup-img .cup {
+  position: absolute;
+  width: 135px;
+  height: 80px;
+  text-align: center;
+  left: 10px;
+  top: 60px;
+}
+main .cup-container .cup-item .cup-item-content .cup-img .bean {
+  position: absolute;
+  width: 37px;
+  height: 45px;
+  background-image: url(../img/bean.png);
+  background-repeat: no-repeat;
+  left: 50px;
+  top: 70px;
+}
+main .cup-container .cup-item .cup-item-content .cup-body {
+  display: block;
+  width: 150px;
+  text-align: center;
+  flex: 1;
+}
+main .cup-container .cup-item .cup-item-content .cup-body .description {
+  letter-spacing: 1px;
+  font-size: 20px;
+  word-spacing: 4px;
+}
+main .cup-container .cup-item .cup-item-content .cup-body .description p {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.col-3 {
+  flex: 1 1 calc(13.33333333%);
+}

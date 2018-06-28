@@ -1,0 +1,118 @@
+// "out": "../css/style.css"
+html, body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, ul, li, a, div, p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+    font-family: "Calibri";
+}
+main {
+   position: relative;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #fdde7e;
+   height: 100vh;
+   .cup-container {
+      padding-top: 80px;
+      display: flex;
+      margin-left: 20px;
+      margin-right: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 500px;
+      align-items: center;
+      .cup-item {
+         height: 440px;
+         background-color: #fff;
+         flex-direction: row;
+         margin-left: 10px;
+         margin-right: 10px;
+         display: flex;
+         justify-content: center;
+         &:hover {
+            height: 500px;
+
+         }
+
+         .cup-item-content {
+            margin-top: 20px;
+            flex-direction: column;
+            display: flex;
+
+            .cup-price {
+               color: #02995b;
+               text-align: center;
+               font-size: 70px;
+               flex: 0.7;
+
+            }
+            .cup-img {
+               width: 135px;
+               height: 135px;
+               flex-direction: column;
+               position: relative;
+               text-align: center;
+               flex: 1.1;
+
+               .smoke {
+                  left: 40px;
+                  position: absolute;
+                  width: 50px;
+                  height: 50px;
+               }
+               .cup {
+                  position: absolute;
+                  width: 135px;
+                  height: 80px;
+                  text-align: center;
+                  left: 10px;
+                  top: 60px;
+
+               }
+               .bean {
+                  position: absolute;
+                  width: 37px;
+                  height: 45px;
+                  background-image: url(../img/bean.png);
+                  background-repeat: no-repeat;
+                  left: 50px;
+                  top: 70px;
+
+               }
+            }
+            .cup-body {
+               display: block;
+               width: 150px;
+               text-align: center;
+               flex: 1;
+               .description {
+                  letter-spacing: 1px;
+                  font-size: 20px;
+                  word-spacing: 4px;
+                  p {
+                     margin-bottom: 10px;
+                     font-size: 40px;
+                  }
+               }
+
+            }
+         }
+
+      }
+
+   }
+
+}
+
+.col-3 {
+   flex: 1 1 calc(33.33333333333% - 20px);
+}
